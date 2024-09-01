@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up for Chatbot</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <h2>Join the Conversation!</h2>
+            <form id="signup-form">
+                <label>Username:</label>
+                <input type="text" id="username" placeholder="Choose a unique username">
+                <br>
+                <label>Email:</label>
+                <input type="email" id="email" placeholder="Enter your email address">
+                <br>
+                <label>Password:</label>
+                <input type="password" id="password" placeholder="Create a strong password">
+                <br>
+                <label>Confirm Password:</label>
+                <input type="password" id="confirm-password" placeholder="Re-enter your password">
+                <br>
+                <div id="error-message"></div>
+                <button id="signup-button">Sign up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

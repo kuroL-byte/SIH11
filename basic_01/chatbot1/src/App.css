@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.saved-texts {
+  list-style: none;
+
+}
+body {
+  background-color: #1ABC9C; 
+}
+.history{
+  align-content: flex-start;
+
+}
+.booking-count {
+  text-align: center;
+  font-size: 20px;
+  font-weight: calibri;
+}
+.centered-container {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.search-button {
+  float: right;
+  margin-left: 10px;
+}
+
+
+
+.availability-button {
+  float: right;
+  margin-left: 10px;
+  
+}
+.top-right-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.history-button{
+top: 5;
+right:2;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 5px;
+}
+.login-button, .signup-button{
+  margin: 5px;
+}
+input[type="text"] {
+  width:153px; 
+  height: 20px; 
+  padding: 10px; 
+  font-size: 16px; 
+  
+}
+.chatbot-header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+ 
+}
+.chatbot-logo {
+  width: 45px; 
+  height: 45px; 
+ 
+}
