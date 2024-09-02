@@ -114,3 +114,22 @@ input[type="text"] {
   height: 45px; 
  
 }
+.history-button-container {
+  position: relative;
+}
+
+.history-list-container {
+  position: absolute;
+  top: 50px; 
+  left: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: none;
+}
+.history-list-container.show {
+  display: block;
+}
+.history-list-container.hide {
+  display: none;
+}

@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import fs from 'fs'
 import axios from 'axios'
@@ -55,13 +53,26 @@ function App() {
     fs.writeFileSync('saved_texts.txt', texts.join('\n'))
   }
   const [showBookingCount, setShowBookingCount] = useState(true);
+  
+  
   return (
     <>
       <div className="top-right-buttons">
       
-  <button onClick={() => window.open('login\login.html', '_blank')} className="login-button">Login</button>
-  <button onClick={() => window.open('signup\signup.html', '_blank')} className="signup-button">Signup</button>
+  <button onClick={() => window.open('http://127.0.0.1:5500/login/login.html', '_blank')} className="login-button">Login</button>
+  <button onClick={() => window.open('http://127.0.0.1:5500/signup/signup.html', '_blank')} className="signup-button">Signup</button>
+ 
+  <div className="history-button-container">
   <button onClick={handleShowSavedTexts} className="history-button">Show history</button>
+  <div className={`history-list-container ${showSavedTexts ? 'show' : 'hide'}`}>
+    <ul>
+      {savedTexts.map((text, index) => (
+        <li key={index}>{text}</li>
+      ))}
+    </ul>
+  </div>
+  
+</div>
         </div>
         <div className="chatbot-header">
         <img src={'chatbot1.png'}  className="chatbot-logo" />
@@ -76,18 +87,10 @@ function App() {
           placeholder="Type a message..."
         />
       <button onClick={handleSaveAndSendToChatGPT} className="search-button">search </button>
-      
       <button onClick={handleShowReceivedAnswers} className="availability-button">Show availability</button>
     
         
-        {showSavedTexts && (
-          
-          <ul>
-            {savedTexts.map((text, index) => (
-              <li key={index}>{text}</li>
-            ))}
-          </ul>
-        )}
+        
         
         {showReceivedAnswers && (
   <div className="centered-container">
