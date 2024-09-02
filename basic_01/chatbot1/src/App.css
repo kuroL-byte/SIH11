@@ -9,7 +9,7 @@
 
 }
 body {
-  background-color: #1ABC9C; 
+  background: linear-gradient(to right, #000000, #2f4f4f, #008080,rgb(37, 176, 169),rgb(114, 206, 206));
 }
 .history{
   align-content: flex-start;
